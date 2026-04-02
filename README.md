@@ -10,128 +10,56 @@ This repository showcases research projects completed during my internship at **
 
 # 📌 Table of Contents
 
-* [Project 1: Crack Detection using Mask R-CNN](#-project-1-crack-detection-using-mask-r-cnn)
+* [Project 1: Crack Segmentation using U-Net](#-project-1-crack-segmentation-using-u-net)
 * [Project 2: Physics-Informed Neural Networks (PINNs)](#-project-2-physics-informed-neural-networks-pinns)
 * [Key Learnings](#-key-learnings)
 * [Acknowledgements](#-acknowledgements)
 
 ---
 
-# 🧩 Project 1: Crack Detection using Mask R-CNN
+🧩 Project 1: Crack Segmentation using U-Net
+🏗️ Title
 
-### 🏗️ Title
+Automated Crack Detection in Materials Using Deep Learning Segmentation
 
-**Crack Detection in Materials Using Mask R-CNN**
-
-### 👨‍🔬 Role
+👨‍🔬 Role
 
 Research Intern (Individual Project)
 Guided by ICME Lab, IIT Bombay
 
----
+📖 Overview
 
-## 📖 Overview
+This project focuses on building a U-Net deep learning model to detect and segment cracks in material stress test images.
 
-This project involves building a **Mask R-CNN model** to detect and segment cracks in high-frequency material stress images.
+The model performs pixel-level segmentation, enabling:
 
-Unlike traditional classification models, this approach provides **pixel-level segmentation**, enabling:
+Precise crack localization
+Automated defect detection
+Structural integrity analysis
+📊 Dataset
+Training Data: 7000 images
+Test Data: 300 images
+⚙️ Tech Stack
+Languages: Python
+Frameworks: TensorFlow, Keras
+Libraries: NumPy, OpenCV
+Tools: Google Colab, Jupyter Notebook
+Architecture: U-Net (Encoder-Decoder with Skip Connections)
+🧠 Model Architecture (Summary)
 
-* Crack localization
-* Length & width estimation
-* Structural analysis
+A 2-level U-Net architecture with an encoder–decoder structure and skip connections.
+The encoder extracts features via convolution and pooling, the bottleneck captures high-level representations, and the decoder upsamples while preserving spatial details.
+The model outputs a binary segmentation mask (crack vs background) using sigmoid activation.
 
----
+📊 Results
+✅ Successfully trained U-Net model for crack segmentation
+🎯 Achieved accurate binary segmentation (crack vs background)
+🔬 Demonstrated feasibility of automated crack detection
+📈 Model converged over 50 training epochs
 
-## ⚙️ Tech Stack
+Sample Output:
 
-* **Languages:** Python
-* **Frameworks:** TensorFlow, Keras
-* **Libraries:** NumPy, OpenCV, Matplotlib
-* **Tools:** Jupyter Notebook, Google Colab
-* **Concepts:**
-
-  * Mask R-CNN
-  * Image Segmentation
-
----
-
-## 🚧 Challenges & Solutions
-
-### 1. Annotation Availability
-
-* **Challenge:** Missing annotation files
-* **Solution:**
-
-  * Created initial annotations
-  * Coordinated external annotation support
-
----
-
-### 2. Model Selection
-
-* **Challenge:** Need for segmentation (not just classification)
-* **Solution:** Selected **Mask R-CNN** for instance segmentation
-
----
-
-### 3. Data Quality
-
-* **Challenge:** Variations in image conditions
-* **Solution:**
-
-  * Normalization
-  * Resizing
-  * Data augmentation (rotation, flipping, shifts)
-
----
-
-### 4. Overfitting
-
-* **Challenge:** Limited labeled data
-* **Solution:**
-
-  * Dropout
-  * Regularization
-  * Early stopping
-  * Cross-validation
-
----
-
-### 5. Computational Constraints
-
-* **Challenge:** High training cost
-* **Solution:** Used **CMINDS (IIT Bombay)** GPU resources
-
----
-
-### 6. Hyperparameter Tuning
-
-* **Challenge:** Model optimization
-* **Solution:**
-
-  * Grid Search
-  * Random Search
-
----
-
-## 📊 Results
-
-* ✅ High accuracy in crack detection
-* 🎯 Reliable segmentation of crack regions
-* 🔍 Enabled deeper analysis of material failure
-
-<img width="1173" height="2990" alt="download" src="https://github.com/user-attachments/assets/ad4b5d85-23f3-4cce-a4f8-cec3ee8f8a36" />
-
----
-
-## 🌍 Impact
-
-* Structural health monitoring
-* Material testing automation
-* Industrial inspection systems
-* Smart infrastructure solutions
-
----
+<img width="1173" height="2990" alt="crack_segmentation_results" src="https://github.com/user-attachments/assets/ad4b5d85-23f3-4cce-a4f8-cec3ee8f8a36" />
 
 # 🔬 Project 2: Physics-Informed Neural Networks (PINNs)
 
