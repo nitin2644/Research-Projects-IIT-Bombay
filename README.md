@@ -89,6 +89,7 @@ Traditional approaches like the **Finite Element Method (FEM)** are computationa
 - ⚡ **60× faster** than FEM simulations  
 - 🎯 **98.2% accuracy** compared to FEM  
 - 🚀 Demonstrated PINNs as a viable real-time simulation tool  
+<img width="1173" height="2990" alt="download" src="https://github.com/user-attachments/assets/ad4b5d85-23f3-4cce-a4f8-cec3ee8f8a36" />
 
 ---
 
@@ -198,7 +199,7 @@ Unlike traditional classification models, this approach provides **pixel-level s
 - ✅ High accuracy in crack detection  
 - 🎯 Reliable segmentation of crack regions  
 - 🔍 Enabled deeper analysis of material failure  
-
+<img width="1173" height="2990" alt="download" src="https://github.com/user-attachments/assets/ad4b5d85-23f3-4cce-a4f8-cec3ee8f8a36" />
 ---
 
 ## 🌍 Impact
